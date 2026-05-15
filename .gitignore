@@ -58,7 +58,7 @@ backend/uploads/*
 !backend/uploads/.gitkeep
 
 # ===== Generated dataset (large image files) =====
-Assignment2_datagen_scripts/scripts/scripts/dataset/
+Datagen_scripts/scripts/scripts/dataset/
 
 # ===== Misc =====
 *.pem

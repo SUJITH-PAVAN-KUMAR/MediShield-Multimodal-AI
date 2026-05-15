@@ -41,6 +41,8 @@ MediShield Health Insurance processes **85,000+ document submissions per month**
 
 ## 🏗️ Architecture
 
+![MediShield AI Architecture](screenshots/architecture.png)
+
 ```
 Document Upload (FastAPI)
          │
@@ -131,7 +133,7 @@ MediShield-AI/
 ├── Phase_Implementation/              # Phase-by-phase development docs
 │   ├── phase1.md → phase6.md
 │
-├── Assignment2_datagen_scripts/       # Synthetic dataset generation
+├── Datagen_scripts/       # Synthetic dataset generation
 │   ├── scripts_overview.txt
 │   └── scripts/scripts/
 │       ├── generate_docs.py           # 151 synthetic document images
@@ -157,7 +159,7 @@ MediShield-AI/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/MediShield-AI.git
+git clone https://github.com/<your-username>/MediShield-Multimodal-AI.git
 cd MediShield-AI
 ```
 
@@ -187,7 +189,7 @@ cp .env.example .env
 Before running the backend, you need to ingest the policy PDF into the Qdrant vector database:
 
 ```bash
-# Make sure the dataset is generated first (see Assignment2_datagen_scripts/)
+# Make sure the dataset is generated first (see Datagen_scripts/)
 python ingest_policy.py
 ```
 
@@ -270,12 +272,10 @@ python evaluate.py
 
 ## 🖼️ Screenshots
 
-> _Add screenshots of your dashboard and case detail views here_
+### System Architecture
+![MediShield AI Architecture](screenshots/architecture.png)
 
-<!-- 
-![Dashboard](screenshots/dashboard.png)
-![Case Detail](screenshots/case_detail.png)
--->
+> _Add screenshots of your dashboard and case detail views here_
 
 ---
 
